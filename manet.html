@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   
+    <title>Claude Oscar Monet</title>
+    <style>
+        body {
+            background-color: #F7E89F; 
+            font-family: Arial, sans-serif;
+            margin-top: 70px; 
+        }
+
+        h1 {
+            font-family: "Brush Script MT", cursive;
+            color: #ffd700; 
+            text-align: center;
+            text-shadow: 5px 5px 5px #F7F7F7; 
+            font-size: 80px; 
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-family: "Times New Roman", cursive;
+            color: #ffd700; 
+            text-align: left;
+            text-shadow: 2px 2px 2px #bfbfbf; 
+            font-size: 25px; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-right: 40px;
+            margin-left: 40px;
+            float: left;
+            
+        }
+
+        .image-container {
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+#immagine-ingrandita {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Aggiunto il transition per rendere fluido l'effetto */
+}
+
+#immagine-ingrandita:hover {
+    transform: scale(1.5); /* Ingrandisci al 150% quando passi sopra */
+}
+
+        .image-container img {
+            width: 400px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-text {
+            color: #black; 
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 35px;
+            margin-right: 35px;
+            text-align: justify;
+		
+        }
+		
+
+        a {
+            color: white; 
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffd700; 
+        }
+		
+				h3 {
+    font-family: "Times New Roman", cursive;
+            color: #ffd700; 
+            text-align: left;
+            text-shadow: 2px 2px 2px #bfbfbf; 
+            font-size: 25px; 
+			margin-left:35px;
+}
+
+.slideshow {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.slideshow img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-container {
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+.btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffd700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	margin-left: 40px;
+
+        }
+		
+    </style>
+</head>
+<body>
+    <h1>Edouard Manet</h1>
+    <ul> 
+        <li><a href="index.html">Pagina Home</a></li>
+        <li><a href="monet.html">Claude Monet</a></li>
+        <li><a href="renoir.html">Pierre-Auguste Renoir</a></li>
+        <li><a href="manet.html">Edouard Manet</a></li>
+		<li><a href="Degas.html">Edgar Degas</a></li>
+		<li><a href="Fonti.html">Fonti</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="image-text">
+            <h2>Biografia</h2>
+            <p>
+                Edouard Manet è considerato uno dei precursori dell'Impressionismo. Nato a Parigi nel 1832, ha avuto un impatto significativo sulla pittura moderna. La sua opera più famosa, "Olympia", ha suscitato scandalo quando è stata esposta al Salon di Parigi nel 1865 a causa del suo ritratto diretto e provocatorio di una donna nuda. Manet ha sfidato le convenzioni artistiche del suo tempo e ha influenzato molti artisti impressionisti successivi, compreso Claude Monet. La sua abilità nel catturare la vita quotidiana e la luce naturale ha reso le sue opere iconiche nell'ambito dell'arte moderna. E' vittima di una progressiva paralisi dovuta alla sifilide ed è morto nel 1883.
+            </p>
+			</div>
+			
+		
+		
+		<div class="image-container">
+    <img id="immagine-ingrandita" src="https://th.bing.com/th/id/OIP.tZ9R_iBdPh9jsXKLKTFghgHaI7?w=196&h=237&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Immagine di esempio">
+</div>
+		
+		
+    <div class="image-text">
+            <h2>Opere principali</h2>
+            <p>
+                Colazione sull'erba 1863;
+                <br>
+                Olympia 1865;
+                <br>
+                Il bar delle folies bergère 1882;
+                <br>
+            </p>
+        </div>
+		  
+		
+		 <h3>Slideshow di Immagini di Eduard  Manet</h3>
+    <div id="slideshow" class="slideshow"></div>
+	<div class="btn-container">
+    <button id="prevBtn" class="btn">Indietro</button>
+    <button id="nextBtn" class="btn">Avanti</button>
+	</div>
+
+ <div class="image-text">
+            <h2>Colazione sull'erba</h2>
+            <p>
+               Presentato al Salon nel 1863 e fu rifiutatama venne esposta nel Salone dei rifiutati, scatenò le critiche per il suo crudo realismo, il soggetto nudo non rappresenta una divinità o una figura mitologica, manca il disegno preparatorio e lo sfondo è abbozzato, è di grandi dimensioni e i colori sono stesi senza alcuna diluizione per dare l'effetto del chiaroscuro. Le figure hanno un preciso significato allegorico, la donna nuda di spalle con il flauto in mano insegna la musica ai due pastorelli, l'altra sta versando l'acqua in una vaschetta e rappresenta il rito di purificazione, le quattro figure si trovano in un triangolo ideale, non c'è interazione tra i protagonisti.
+				</p>
+			</div>
+			
+			<div class="image-text">
+            <h2>Olympia</h2>
+            <p>
+               Presentata al Salon del 1865 fece scandalo. Si ispira ai modelli classici: la venere di Urbino di Tiziano, Maja desnuda di GoYa e odalisca con schiava. La domestica le porge un mazzo di fiori probabilmente il dono di un' ammiratore, la posa ricordava le immagini pornografiche che circolavano clandestinamente nei salotti mondani. C'è un gatto nero simbolo della prostituzione e dell'indipendenza. Rivolge lo sguardo all'osservatore ignorando il dono, dimostrando che il suo affetto non è per un solo individuo ma è legata al miglior offerente.
+			   </p>
+			</div>
+			
+			<div class="image-text">
+            <h2>Il bar delle folies bergère</h2>
+            <p>
+               E' l'ultimo dipinto a cui lavora, fu accettato al Salon nel 1882. In primo piano si vede una cameriera, unico personaggio reale, la folla è solo riflessa nel grande specchio dietro di lei. Manca l'unicità del punto di vista la visione rappresentata non è possibile da un punto di vista frontale.  Usa colori piatti tendenzialmente freddi; Le radiografie mostrano come inizialmente le braccia della ragazza erano incrociate, gesto che sottolineava un atteggiamento di protezione dall'esterno e di insoddisfazione.		   </p>
+			</div>
+
+  <script>
+    // Mostra un avviso di conferma quando si carica la pagina
+    window.onload = function() {
+        var conferma = window.confirm("Vuoi davvero accedere a questa pagina?");
+        
+        // Se l'utente fa clic su "Annulla", reindirizza l'utente altrove
+        if (!conferma) {
+            window.location.href = "file:///C:/Users/39389/Desktop/info/index.html"; // Sostituisci con l'URL desiderato
+        }
+    };
+</script>	
+
+
+    <script src="script2.js"></script>
+		
+		  
+		  
+        
+    
+
+</body>
+</html>

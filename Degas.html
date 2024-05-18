@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   
+    <title>Edgar Degas</title>
+    <style>
+        body {
+            background-color: #FFDEAD; 
+            font-family: Arial, sans-serif;
+			margin-top: 70px;
+        }
+
+        h1 {
+            font-family: "Brush Script MT", cursive;
+            color: #FFA500	; 
+            text-align: center;
+            text-shadow: 5px 5px 5px white; 
+            font-size: 80px; 
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-family: "Times New Roman", cursive;
+            color: #FFA500;
+            text-align: left;
+            text-shadow: 3px 3px 3px lightgray; 
+            font-size: 25px; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+			
+        }
+
+        li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-left: 40px;
+			margin-right: 40px;
+            float: left;
+        }
+
+        .image-container {
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+#immagine-ingrandita {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Aggiunto il transition per rendere fluido l'effetto */
+}
+
+#immagine-ingrandita:hover {
+    transform: scale(1.5); /* Ingrandisci al 150% quando passi sopra */
+}
+
+        .image-container img {
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-text {
+            color: #black	;
+            font-size: 20px;
+            margin-top: 20px;
+			margin-left: 40px;
+			margin-right: 40px;
+			text-align: justify;
+        }
+
+        a {
+            color: white	;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color:#FFA500;
+        }
+		
+			h3 {
+    font-family: "Times New Roman", cursive;
+            color: #FFA500; 
+            text-align: left;
+            text-shadow: 2px 2px 2px #bfbfbf; 
+            font-size: 25px; 
+			margin-left:35px;
+}
+
+.slideshow {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.slideshow img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-container {
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+.btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	margin-left: 40px;
+
+}
+
+
+		
+		
+    </style>
+</head>
+<body>
+
+    <h1>Edgar Degas</h1>
+    <ul> 
+        <li><a href="index.html">Pagina Home</a></li>
+        <li><a href="monet.html">Claude Monet</a></li>
+        <li><a href="renoir.html">Pierre-Auguste Renoir</a></li>
+        <li><a href="manet.html">Edouard Manet</a></li>
+		<li><a href="Degas.html">Edgar Degas</a></li>
+		<li><a href="Fonti.html">Fonti</a></li>
+		
+    </ul>
+
+   <div class="container">
+        <div class="image-text">
+            <h2>Biografia</h2>
+            <p>
+            Nasce nel 1834, tra gli impressionisti è l'artista più legato al disegno e alla pittura in atelier, per lui l'en plein air coglie in modo riduttivo l'impressione si deve disegnare solo ciò che si vede con la memoria. Nel 1874 la famiglia ha problemi finanziari e l'anno dopo la pittura diventa il suo unico mezzo di sostentamento. Nel 1880 inizia a perdere la vista e nel 1890 praticamente ceco si dedicherà alla scultura. Muore nel 1917.
+		La sua carriera si può dividere in tre principali momenti: Esordio, Fase impressionista e Oltre l'impressionismo. 
+			</p>
+			</div>
+			
+		
+		
+		<div class="image-container">
+    <img id="immagine-ingrandita" src="https://th.bing.com/th/id/OIP.eu666WfIgCzV58xSd-bb2wHaJk?w=196&h=254&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Immagine di esempio">
+</div>
+		
+		<div class="image-text">
+            <h2>Opere principali</h2>
+            <p>
+                Ritratto di Hilaire Degas 1857;
+                <br>
+                Famiglia Belelli;
+                <br>
+                Quattro ballerine in blu 1898;
+                <br>
+				La classe di danza del signor Perrot 1873-1875;
+				<br>
+				L'Assenzio 
+				<br>
+				Le viole o lo stupro;
+            </p>
+    </div>
+	
+		
+		 <h3>Slideshow di Immagini di Edgar Degas</h3>
+    <div id="slideshow" class="slideshow"></div>
+	<div class="btn-container">
+    <button id="prevBtn" class="btn">Indietro</button>
+    <button id="nextBtn" class="btn">Avanti</button>
+	</div>
+
+<div class="image-text">
+            <h2>Ritratto di Hilaire Degas</h2>
+            <p>
+            Raffigura suo nonno con espressione stanca e bastone dall'impugnatura d'avorio indicano la vecchiaia e il suo status di capofamiglia. E' impostato su una grglia di linee verticali, orizzontali e diagonali. La luce riscalda solo le parti del dipinto più rilevanti. La posa è disinvolta e non troppo ufficiale.
+			</p>
+			</div>
+			
+			<div class="image-text">
+            <h2>Famiglia Belelli</h2>
+            <p>
+            E' il ritratto di una famiglia in un interno, si ispiro alla pittura flamminga. I protagonisti rappresentano la famiglia della zia paterna Laura Degas sposata con il barone Gennaro Benelli, seduto in poltrona mentre guarda le figlie che non ricambiano lo sguardo. Utilizza il nero insolito per gli impressionisti. Riesce a cogliere la profondità psicologica dei personaggi ritratti, la tensione e il disappunto della vita matrimoniale e il conflitto trra i coniugi.
+			</p>
+			</div>
+			
+			<div class="image-text">
+            <h2>Quattro ballerine in blu</h2>
+            <p>
+            Punto di vista molto alto. La sovrapposizione dei tratteggi suggerisce un volume nuovo e dà l'illusione del movimento
+			</p>
+			</div>
+			
+			<div class="image-text">
+            <h2>La classe di danza del signor Perrot</h2>
+            <p>
+            Primo dipinto delle serie delle ballerine ad una lezione di danza del coreografo Jules Perrot in una sala dell'Opera in rue Le Peletier. Utilizza la tecnica del taglio fotografito, l'interno è reso spazioso dalla visuale prospettica. Le linee diagonali del pavimento individuano un punto di fuga situato all'esterno della scena. La luce proviene da destra dove immaginiamo una grande finestra. I gesti delle ballerine sono spontanei rappresentano la fine di una lezione di danza quando l'atmosfera si fa più rilassata e informale.  
+			</p>
+			</div>
+			
+			<div class="image-text">
+            <h2>L'Assenzio </h2>
+            <p>
+            Ambientata nel Cafè de la Nouvelles Athènes, i soggetti sono Ellen Andrèe e Marcellin Desboutin amici del pittore, non comunicano nell'opera. Il punto di vista è quello di un ipotetico osservatore nello stesso bar in un altro tavolino, l'inquadratura è inconsueta, sono spostati sulla destra come a sottolinearne la marginalità sociale. Uno specchio alle spalle dei personaggi ne riflette le sagome
+			</p>
+			</div>
+			
+			<div class="image-text">
+            <h2>Le viole o lo stupro</h2>
+            <p>
+            La luce accesa illumina la scena, ci troviamo nella camera della ragazza. L'uomo con la barba appoggiato al muro impaurisce e scruta la ragazza che cerca riparo dall'altra parte della camera. E' vestita di bianco rappresenrta la purezza e il corpo magro trasmette fragilità. Degas con questo quadro mostra il destino tragico delle donne vittime di violenza anche in ambienti familiariaffinchè non venga dimenticato.
+			</p>
+			</div>
+			
+			
+
+  <script>
+    // Mostra un avviso di conferma quando si carica la pagina
+    window.onload = function() {
+        var conferma = window.confirm("Vuoi davvero accedere a questa pagina?");
+        
+        // Se l'utente fa clic su "Annulla", reindirizza l'utente altrove
+        if (!conferma) {
+            window.location.href = "file:///C:/Users/39389/Desktop/info/index.html"; // Sostituisci con l'URL desiderato
+        }
+    };
+</script>	
+
+
+    <script src="script3.js"></script>
+		
+	
+
+</body>
+</html>

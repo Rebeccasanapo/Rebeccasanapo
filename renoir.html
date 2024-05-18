@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   
+    <title>Pierre-Auguste Reonir</title>
+    <style>
+        body {
+            background-color: #FFD1DC; 
+            font-family: Arial, sans-serif;
+            margin-top: 70px; 
+        }
+
+        h1 {
+            font-family: "Brush Script MT", cursive;
+            color: #FF007F; 
+            text-align: center;
+            text-shadow: 5px 5px 5px #F7F7F7; 
+            font-size: 80px; 
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-family: "Times New Roman", cursive;
+            color: #FF007F; 
+            text-align: left;
+            text-shadow: 2px 2px 2px #bfbfbf; 
+            font-size: 25px; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .container {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-left: 40px;
+            margin-right: 40px;
+            float: left;
+            clear: both; 
+        }
+
+      .image-container {
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+#immagine-ingrandita {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Aggiunto il transition per rendere fluido l'effetto */
+}
+
+#immagine-ingrandita:hover {
+    transform: scale(1.5); /* Ingrandisci al 150% quando passi sopra */
+}
+
+        .image-container img {
+            width: 300px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-text {
+            color: #black; 
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+            text-align: justify;
+        }
+		
+		
+
+        a {
+            color:white ; 
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FF007F; 
+        }
+		
+		h3 {
+    font-family: "Times New Roman", cursive;
+            color: #FF007F; 
+            text-align: left;
+            text-shadow: 2px 2px 2px #bfbfbf; 
+            font-size: 25px; 
+			margin-left:35px;
+}
+
+.slideshow {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.slideshow img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-container {
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+.btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF007F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	margin-left: 40px;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Pierre-Auguste Reonir</h1>
+    <ul> 
+        <li><a href="index.html">Pagina Home</a></li>
+        <li><a href="monet.html">Claude Monet</a></li>
+        <li><a href="renoir.html">Pierre-Auguste Renoir</a></li>
+        <li><a href="manet.html">Edouard Manet</a></li>
+		<li><a href="Degas.html">Edgar Degas</a></li>
+		<li><a href="Fonti.html">Fonti</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="image-text">
+            <h2>Biografia</h2>
+            <p>
+            E' considerato uno dei massimi esponenti dell'impressionismo. Dimostra amore per l'arte fin da bambino così il padre lo indirizza alle decorazioni delle porcellane. A ventunanni entra nell'Ecole des Beaux dove conosce Claude Monet ed Alfred Sisley. Dipinge all'aperto per catturare l'essenza della luce e dei colori. Partecipa alla prima mostra impressionista nello studio di Nadar nel 1874. Nel 1890 viene insignito della Legion d'onore, massimo riconoscimento della repubblica francese. Continuerà a dipingere anche quando verrà colpito dalla artrite, si farà persino legare il pennello al polso affinchè non gli cada dalla mano. Muore nel 1919.   
+				</p>
+				</div>
+				
+				<div class="image-container">
+    <img id="immagine-ingrandita" src="https://th.bing.com/th/id/R.f6dfdff5afd291beb1c6a404de5bb328?rik=UNc1suhs71Swcg&riu=http%3a%2f%2fuploads1.wikiart.org%2fimages%2fpierre-auguste-renoir%2fself-portrait-1899.jpg&ehk=e5jGPFJBX%2fj5dgtEFbusC6CmS4sK7cAbfj3B2FnHkVI%3d&risl=&pid=ImgRaw&r=0" alt="Immagine di esempio">
+</div>
+		
+		<div class="image-text">
+            <h2>Opere principali</h2>
+            <p>
+                Ritratto di Madame Darras (l'Amazzone);
+                <br>
+                Bal au Moulin de la Galette 1876;
+                <br>
+                La Grenouillèere 1869;
+                <br>
+            </p>
+    </div>
+	
+		
+		  
+<h3>Slideshow di Immagini di Pierre-Auguste Reonir</h3>
+    <div id="slideshow" class="slideshow"></div>
+	<div class="btn-container">
+    <button id="prevBtn" class="btn">Indietro</button>
+    <button id="nextBtn" class="btn">Avanti</button>
+	</div>
+	
+	<div class="image-text">
+            <h2>Ritratto di Madame Darras (l'Amazzone)</h2>
+            <p>
+            Il dipinto è lo studio per una tela di dimensioni più grandi rifiutata dal Salon nel 1873. La visione della donna è più frontale con una rotazione di tre quarti, indossa un abito nero e un cappello a cilindro da cavalcata, testimonia la diffusione alla fine dell'ottocento dell'equitazione tra le giovani donne delle classi agiate. Le ombre diventano colorate e le figure umane mantengono la loro consistenza volumetricaintegrandosi maggiormente nell'ambiente grazie all'uso di luce e colori. C'è un gioco ingannevole di seducenti trasparenze dovute alla veletta nera. Lo sfondo è indistinto non mostra particolari ambientali, la luce emerge dal contrasto del colore scuro dell'abito e il colore chiaro dell'incarnato.
+			</p>
+				</div>
+				
+				<div class="image-text">
+            <h2>Bal au Moulin de la Galette</h2>
+            <p>
+            Realizza uno spaccato di vita mondana parigina all'epoca della Belle Epoque, la scena è quella di un ballo popolare all'aperto. fu dipinto in parte dal vivo e in parte in atelier dove riorganizza gli schizzi colti sul posto. Utilizza un uso nuovo e libero del colore, l'artista cerca di suggerire il senso del movimento e lo stato d'animo collettivo. L'apparente casualità della rappresentazione nasconde un'attenta valutazione compositiva frutto dello studio dei classici. Pur non essendoci dei piani stabiliti, non esiste un soggetto principale nessun personaggio risulta isolato, in quanto è inserito in un determinato gruppo. I personaggi tagliati all'estremità del quadro suggeriscono la continuità dell'azione nota come taglio fotografico. Le ombre risultano sempre colorate, in quanto la natura conosce soltanto i colori e il bianco e il nero non lo sono.
+			</p>
+				</div>
+				
+				<div class="image-text">
+            <h2>La Grenouillèere</h2>
+            <p>
+            Dipinto nell'estate del 1869, è uno stabilimento balneare sull'isolotto di Croissy sulla Senna. Realizza un focus ravvicinato si focalizza sulle figure che sono meglio delineate. I colori sono sgargianti, utilizza larghe pennellate orizzontali che definiscono aree ombreggiate e luminose.  
+			</p>
+				</div>
+				
+	  <script>
+    // Mostra un avviso di conferma quando si carica la pagina
+    window.onload = function() {
+        var conferma = window.confirm("Vuoi davvero accedere a questa pagina?");
+        
+        // Se l'utente fa clic su "Annulla", reindirizza l'utente altrove
+        if (!conferma) {
+            window.location.href = "file:///C:/Users/39389/Desktop/info/index.html"; // Sostituisci con l'URL desiderato
+        }
+    };
+</script>	
+
+    <script src="script1.js"></script>
+
+	
+</body>
+</html>
